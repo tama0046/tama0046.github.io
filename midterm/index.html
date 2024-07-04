@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Manoj Tamang (midterm)</title> 
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+
+<body>
+
+    <div class="wrapper"> <!-- Container for the content -->
+        <header id="home"> 
+            <img src="images/lonefish_first.jpg" alt="Lonefish" class="header-image"> 
+            <h1>Lone Starfish</h1> 
+        </header>
+
+        <main>
+
+            <nav> <!-- Navigation bars -->
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#story">STORY</a></li> 
+                    <li><a href="#contact">CONTACT</a></li> 
+                </ul>
+            </nav>
+
+            <article id="story"> <!-- Article section with an id for navigation -->
+                <h2>Life of a Lonefish</h2> 
+                <img src="images/lonefish_second.jpg" alt="lonefish" class="article-image"> <!-- Article image -->
+                <p>Particularly, an Australian animal known for its erratic migratory habits and propensity to do well in pretty much every other patch of coastal water around Australia: the herring. Barbel Mexican Golden Trout The barbel golden trout among the mexican rivers, very valued for sport fishingerculosis. Killifish - the minnow-like species famous as models for their hardiness and ability to live in temporary bodies of water that makes them useful ecological subjects. The bonito and northern anchovy are both an important part of the marine food web, with Bonitos being a fast swimming species that is also popular in sport fishing while northern anchovies play a vital role as prey for larger fish and many marine mammals throughout their lifecycle. The waryfish is one of the more elusive species which makes it a tough fish for researchers to study. The lionfish.The lionfish, arch-enemies of the Atlantic coast and purveyors of poisonous spines has a flamboyant visage that overshadows it's otherwise destructive role in its new ecosystems. It is highly valuable primarily because it is sensitive to environmental change, making it an indicator species for water quality. While the leopard danio is a commonly kept aquarium fish, appreciated for its vivid patterning and active swimming behaviours.</p> <!-- Paragraph content -->
+            </article>
+
+            <section> <!-- Section for additional facts -->
+                <h2>Facts About Lone fish</h2> 
+                <ul>
+                    <!-- listing a items  -->
+                    <li>Particularly, an Australian animal known for its erratic migratory habits and propensity</li> 
+                    <li>The bonito and northern anchovy are both an important part of the marine food web</li>
+                    <li>The lionfish.The lionfish, arch-enemies of the Atlantic coast and purveyors of poisonous spines</li> 
+                    <li>the leopard danio is a commonly kept aquarium fish, appreciated for its vivid patterning and active swimming behaviours.</li> 
+                </ul>
+            </section>
+
+            <!-- contact sections -->
+            <section id="contact"> 
+                <h3>Contact to learn more</h3> 
+                <form action="#"> <!-- Form element with a placeholder action attribute -->
+
+                    <!-- labeling for the input field  -->
+
+                    <label for="name">Your Name</label> 
+                    <input type="text" id="name" name="name" required> 
+
+                    <label for="email">Your Email</label> 
+                    <input type="email" id="email" name="email" required> 
+
+                    <label for="message">Your Message</label> 
+                    <textarea name="message" id="message" required></textarea>
+                    
+                    <div class="radio-buttons"> 
+                        <label for="visit Yes">Would you like to visit the lone fish?</label> 
+                        <div>
+                            <span>
+                                <label for="visit yes">Yes</label> <!-- Labelling for the "Yes" radio button -->
+                                <input type="radio" id="Visit yes" name="visit" value="Yes"> 
+
+                            <span>
+                                <label for="visit No">No</label> <!-- Labelling for the "No" radio button -->
+                                <input type="radio" id="Visit No" name="visit" value="No"> 
+                            </span>
+
+                            <span>
+                                <label for="visit maybe">Maybe</label> <!-- Labelling for the "Maybe" radio button -->
+                                <input type="radio" id="Visit may be" name="visit" value="May be"> 
+                            </span>
+
+                        </div>
+                    </div>
+                    <button type="Send">SEND</button> <!-- Send  button -->
+                </form>
+            </section>
+        </main>
+        <footer> <!-- Footer -->
+            <p>&copy; Lone fish.</p>
+        </footer>
+    </div>
+</body>
+</html>

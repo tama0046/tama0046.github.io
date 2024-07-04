@@ -1,0 +1,170 @@
+/* begaining of the css for the decoration of the webpages */
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Setting the font family of the entire body parts */
+    background-color: gray; /* Setting the background color  */
+}
+
+.wrapper {
+    margin: auto; 
+    width: 900px; 
+    background-color: yellowgreen; 
+    border: 0.5px solid black; /* Settting a black coloor for the border of the wrapper */
+}
+
+header {
+    text-align: center; 
+    color: orange; 
+    position: relative; /* Establishing a position of the context for a absolute position inside the header */
+}
+
+header .header-image {
+    width: 900px; 
+    height: 400px; 
+}
+
+header h1 {
+    position: absolute; 
+    bottom: -30px; /* Positioning the bottom of the h1 element 30px below the element containing in it  */
+    left: 50%; /* Positioning the left side of the h1 element at 50% of the width*/
+    transform: translate(-40%,-40%); /* Translates the h1 element to center it */
+    color: black; 
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a shadow */
+    padding: 20px; 
+}
+
+nav {
+    padding: 20px 0; /* Adds a padding above and below the nav elements */
+}
+
+nav ul {
+    list-style-type: none; /* it Removes bullet points from the lists */
+    padding: 10px; 
+    margin: 0; 
+    text-align: center; 
+    display: flex; /* Using a flexbox for aproper layout */
+    justify-content: center; 
+    align-items: center; /* it allign the flex elements in a vertical */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 auto; 
+}
+
+nav ul li a {
+    text-decoration: none; /* Removoving the underline from the links */
+    color: black; 
+    font-size: 1.5em; /* Setting the font size of the links */
+    padding: 0 20px; 
+    display: inline-block; /* Allowing for padding and margins*/
+    position: relative;
+}
+
+nav ul li:not(:last-child) a::after {
+    content: '|'; /* Adding a vertical bars after the link */
+    position: absolute;
+    right: -100px; /* Positioning the right side of the element 100px to the right */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underlines the link on hover */
+}
+
+article {
+    padding: 20px; 
+    text-align: justify; 
+    margin: 20px auto;
+    line-height: 1.7; 
+}
+
+article p {
+    font-weight: bold; 
+}
+
+.article-image {
+    float: left; /* Floats the image to the left */
+    margin: 0 15px 15px 0; /* Adds margin around the image */
+    width: 400px; /* Sets the width of the image */
+    height: 400px; /* Sets the height of the image */
+}
+
+section {
+    padding: 15px; 
+    margin: 15px auto; 
+    line-height: 1.6; 
+}
+
+section ul {
+    list-style-type: disc; /* Uses of a  disc as the list items */
+    padding-left: 15px; 
+    font-weight: bold; 
+}
+
+form {
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    border: 1px solid black; 
+}
+
+form label {
+    font-weight: bold; 
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border: 1px solid black; 
+}
+
+form textarea {
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid black; 
+    height: 100px;
+} 
+
+.radio-buttons {
+    margin-top: 10px; 
+}
+
+.radio-buttons label {
+    display: inline; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+}
+
+radio-buttons input[type="radio"] {
+    margin-right: 5px; 
+}
+
+radio-buttons span {
+    margin-right: 15px; 
+}
+
+form button {
+    width: 100px;
+    height: 50px; 
+    padding: 30px; 
+    font-size: 1em; 
+    background-color: gray; 
+    color: black; 
+    border: none; 
+}
+
+form button:hover {
+    background-color: black; /* Changes a background color of the buttons on hover */
+}
+
+footer {
+    text-align: right; 
+    position: relative; /* Establishes a positioning context for absolutely positioned elements */
+    padding: 20px; 
+    margin: 20px; 
+    bottom: 40px; /* Positions the bottom of the footer 40px below its containing element */
+    font-weight: bold; 
+}
