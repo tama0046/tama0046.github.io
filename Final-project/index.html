@@ -12,75 +12,57 @@
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <!-- Optional Google Fonts link (commented out) -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header Section -->
   <header>
-    <div class="wrapper">
-      <!-- Logo Section -->
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Logo" class="logo-img" height="50px">
-      </div>
-      <!-- Navigation Bar -->
-      <nav>
-        <ul class="navigation">
-          <li><a href="#home" class="home-btn">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Search Bar -->
+    <section class="header-section">
+      <img src="images/logo.jpg" alt="Logo" class="logo-img">
+      <ul class="navigation">
+        <li><a href="#home" class="home-btn">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
       <div class="search-bar">
         <input type="text" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-    </div>
+    </section>
   </header>
 
   <!-- Main Content Section -->
   <main>
     <!-- Welcome Section -->
-    <section id="home" class="welcome">
-      <div class="body-wrapper">
-        <div class="main-banner-container">
-          <!-- Main Banner Image -->
-          <img src="images/main-banner.jpg" alt="Main Banner" class="main-banner">
-          <!-- Transparent Box with Welcome Text -->
-          <div class="transparent-box">
-            <span id="welcome-text">
-              <h1>Welcome to Three Star <br> Media</h1>
-            </span>
-            <!-- Welcome Paragraph -->
-            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, suscipit natus.
-              Quis itaque, nulla accusantium aut officia voluptates! Unde cumque explicabo eos maxime doloremque nostrum
-              fuga veniam ipsum ab natus! Id, suscipit natus. Quis itaque, nulla accusantium aut officia voluptates!</p>
-            <br>
-            <!-- Connect Button -->
-            <div class="connect-button">
-              <button style="font-size:24px">Connect with us <i class="fa fa-caret-right"></i></button>
-            </div>
-          </div>
+    <section id="home" class="main-banner-container">
+      <img src="images/main-banner.jpg" alt="Welcome">
+      <div class="main-transparent-box">
+        <span class="welcome-text">Welcome to Three Star <br> Media</span>
+        <span class="welcome-text-brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, suscipit natus.
+          Quis itaque, nulla accusantium aut officia voluptates! Unde cumque explicabo eos maxime doloremque nostrum
+          fuga veniam.</span>
+        <br />
+        <div class="connect-button">
+          <button>Connect with us &nbsp;<i class="fa fa-caret-right"></i></button>
         </div>
       </div>
     </section>
-
     <!-- About Us Section -->
-    <section class="about-us-container">
+    <section id="about" class="about-us-container">
       <!-- Left Side Image -->
       <section class="about-us-left">
         <img src="images/about-us.jpg" alt="About Us">
       </section>
       <!-- Right Side Text -->
       <section class="about-us-right">
-        <span class="about-us-text"><b>
-            <p>About Us</p>
-          </b></span>
+        <span class="about-us-text"></span>
+        <p>About Us</p>
         <!-- About Us Paragraphs -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit sint laboriosam maiores et eaque
           molestiae, a beatae atque distinctio numquam amet eligendi odit commodi, ipsum unde expedita sapiente
@@ -94,7 +76,7 @@
     <!-- Services Section -->
     <span class="services-header-text">Our Services</span>
     <br /><br />
-    <section class="services-container">
+    <section id="services" class="services-container">
       <!-- Digital Transformation Service -->
       <div class="services-upper-container">
         <img src="images/digital.jpg" alt="Digital Transformation">
@@ -171,10 +153,10 @@
         </div>
       </div>
     </section>
-    <br /><br /><br />
+    <br />
 
     <!-- Vision Section -->
-    <Section class="vision-container">
+    <section class="vision-container">
       <!-- Vision Image -->
       <img src="./images/vision.jpg" alt="Vision">
       <div class="vision-content">
@@ -193,19 +175,17 @@
     <!-- Team Section -->
     <span class="services-header-text">Our Team</span>
     <br /><br />
-    <section class="team-container">
+    <section id="team" class="team-container">
       <!-- First Team Member (John Doe) -->
       <div class="team-small-partition">
         <img src="images/john.jpg" alt="John Doe">
       </div>
       <div class="team-small-partition">
         <div class="team-partition-text">
-          <p>
           <h1>John Doe</h1>
-          </p>
           <br />
           <h3>CEO and Co-owner</h3>
-          <hr style="border: 1px solid rgba(216,167,58,255)">
+          <hr class="custom-hr">
           <br />
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laudantium soluta nihil, blanditiis
             molestias harum voluptas odit saepe est alias, magni provident, quod facilis quasi sint. Voluptates veniam
@@ -218,12 +198,10 @@
       <!-- Second Team Member (Bob Rite) -->
       <div class="team-small-partition">
         <div class="team-partition-text">
-          <p>
           <h1>Bob Rite</h1>
-          </p>
           <br />
           <h3>CFO and Co-owner</h3>
-          <hr style="border: 1px solid rgba(216,167,58,255)">
+          <hr class="custom-hr">
           <br />
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laudantium soluta nihil, blanditiis
             molestias harum voluptas odit saepe est alias, magni provident, quod facilis quasi sint. Voluptates veniam
@@ -243,7 +221,7 @@
     <!-- Contact Section -->
     <span class="services-header-text">Contact Us</span>
     <br /><br />
-    <section class="contact-container">
+    <section id="contact" class="contact-container">
       <!-- Contact Form -->
       <div class="contact-small-partition">
         <h1>Send us a message</h1>
@@ -270,8 +248,7 @@
         <div class="maps-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89832.70183631836!2d-75.80068782319101!3d45.28272641222452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722364875660!5m2!1sen!2sca"
-            width="100%" height="100%" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>

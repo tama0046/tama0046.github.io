@@ -22,13 +22,6 @@ summary {
     display: block;
 }
 
-/* Remove list styling and set default color */
-ul,
-li {
-    list-style: none;
-    color: rgba(199, 139, 7, 255);
-}
-
 /* Remove border and background color on form elements */
 input,
 textarea,
@@ -43,12 +36,11 @@ table {
     border-spacing: 0;
 }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
+    max-width: 1200px;
 }
 
 /* Header Styling */
@@ -61,43 +53,44 @@ a {
     color: rgba(199, 139, 7, 255) !important;
 }
 
-/* Flexbox layout for header content */
-header .wrapper {
+/* Section Container Styling */
+.header-section {
+    margin-left: 6%;
+    margin-right: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 10px;
+    gap: 20px;
 }
 
-/* Logo Styling */
+/* Image Styling */
 .logo-img {
     height: 50px;
 }
 
 /* Navigation Styling */
 .navigation {
+    list-style: none;
     display: flex;
-    gap: 6rem;
+    gap: 90px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Link Styling */
+.navigation li {
+    margin: 0;
+}
+
 .navigation a {
-    color: #fff;
     text-decoration: none;
+    color: #c78c06;
+    font-weight: bold;
 }
 
-/* Main Banner Container Styling */
-.main-banner-container {
-    width: 100%;
-    height: 75vh;
-    overflow: hidden;
-}
-
-/* Main Banner Image Styling */
-.main-banner-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.navigation a:hover {
+    background-color: #c78c06;
+    color: black !important;
 }
 
 /* Search Bar Styling */
@@ -132,45 +125,60 @@ header .wrapper {
     border: 1px solid rgba(199, 139, 7, 255);
     background-color: rgba(34, 34, 34, 255);
     color: rgba(199, 139, 7, 255);
+    /* text-align: right !important; */
 }
 
-/* Wrapper for full-width sections */
-.wrapper {
-    max-width: 1200px;
+/*main-banner section*/
+
+.main-banner-container {
+    position: relative;
+    width: 100%;
     margin: 0 auto;
-    height: 100px;
+    height: 60vh;
+    overflow: hidden;
 }
 
-/* Transparent Box Styling */
-.transparent-box {
+.main-banner-container img {
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    /* object-fit: cover; */
+}
+
+.main-transparent-box {
     position: absolute;
     top: 50%;
-    left: 8%;
-    width: 84%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    width: 85%;
     color: #fff;
-    text-align: center;
-    border-radius: 10px;
+    font-weight: bold;
+    padding: 30px 6px;
 }
 
-/* Welcome Text Styling */
-#welcome-text {
-    text-align: left;
-    font-size: 75px;
+.welcome-text {
+    font-size: 60px;
+    display: block;
 }
 
-/* Connect Button Container Styling */
+.welcome-text-brief {
+    font-size: 14px;
+    font-weight: 100;
+}
+
 .connect-button {
     text-align: left;
 }
 
 /* Connect Button Styling */
 .connect-button button {
-    background-color: rgba(199, 139, 7, 255);
-    height: 100px;
-    width: 280px;
+    background-color: #c78c06;
+    height: 60px;
+    width: 150px;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
 }
 
 /* About Us Section Styling */
@@ -191,7 +199,7 @@ header .wrapper {
 
 /* About Us Left Image Styling */
 .about-us-left {
-    padding-left: 8%;
+    padding-left: 6%;
     padding-right: 5px;
     margin-right: 7px;
 }
@@ -205,7 +213,7 @@ header .wrapper {
 /* About Us Right Section Styling */
 .about-us-right {
     text-align: left;
-    padding-right: 8%;
+    padding-right: 6%;
     padding-left: 0;
     margin-left: 7px;
 }
@@ -235,7 +243,6 @@ header .wrapper {
 .services-upper-container {
     width: calc(50% - 10px);
     background-color: lightblue;
-    height: 485px;
     display: flex;
     flex-direction: column;
 }
@@ -251,7 +258,6 @@ header .wrapper {
 .services-lower-container {
     width: calc(33.33% - 13.33px);
     background-color: lightcoral;
-    height: 485px;
     display: flex;
     flex-direction: column;
 }
@@ -276,16 +282,6 @@ header .wrapper {
 .services-container-text {
     background-color: rgba(255, 230, 172, 255);
     padding: 20px;
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    /* Adjust services container width for mobile */
-    .services-upper-container,
-    .services-lower-container {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
 
 /* Vision Section Styling */
@@ -335,15 +331,20 @@ header .wrapper {
 /* Team Member Partition Styling */
 .team-small-partition {
     width: calc(50% - 0px);
-    background-color: lightblue;
+    background-color: #ffe6ac;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
 
+.custom-hr {
+    border: 1px solid rgba(216, 167, 58, 255);
+}
+
 /* Team Member Text Styling */
 .team-partition-text {
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 /* Team Member Image Styling */
@@ -353,40 +354,19 @@ header .wrapper {
     object-fit: cover;
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    /* Adjust team section width for mobile */
-    .team-small-partition {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Connect Button Text Styling */
-.connect-seventh p {
-    font-size: 1em;
-    margin-top: 20px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-/* Connect Button Icon Styling */
-.connect-seventh i {
-    margin-left: 5px;
-    font-size: 1.2em;
-}
-
 /* Contact Section Styling */
 .contact-container {
     width: 82%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two equal columns */
+    gap: 20px;
+    /* Adjust as needed for spacing */
 }
 
 /* Contact Section Partition Styling */
 .contact-small-partition {
-    width: calc(50% - 0px);
     height: 500px;
     box-sizing: border-box;
 }
@@ -437,13 +417,11 @@ header .wrapper {
 /* Maps Iframe Styling */
 .maps-container iframe {
     border: none;
+    height: 100%;
+    width: 100%;
 }
 
-/* Timetable Section Styling */
-.timetable-container {
-    width: 82%;
-    margin: 0 auto;
-}
+
 
 /* Contact Form Button Styling */
 .contact-form button {
@@ -453,6 +431,12 @@ header .wrapper {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* Timetable Section Styling */
+.timetable-container {
+    width: 82%;
+    margin: 0 auto;
 }
 
 /* Hours of Operation Section Styling */
@@ -504,4 +488,73 @@ footer {
 /* Footer Container Styling */
 .footer-container {
     margin-left: 9%;
+}
+
+/*Mobile Layout Design */
+
+@media screen and (max-width: 760px) {
+
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .fa-magnifying-glass {
+        display: none !important;
+    }
+
+    .about-us-container {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .team-small-partition {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+
+    .about-us-left,
+    .about-us-right {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .services-upper-container,
+    .services-lower-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services-header-text {
+        margin-left: 8%;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        gap: 10px;
+        /* Adjust as needed for spacing */
+    }
+
+    .contact-small-partition {
+        width: 100%;
+    }
 }
