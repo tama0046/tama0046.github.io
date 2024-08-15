@@ -1,0 +1,507 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML5 Display Roles */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Remove list styling and set default color */
+ul,
+li {
+    list-style: none;
+    color: rgba(199, 139, 7, 255);
+}
+
+/* Remove border and background color on form elements */
+input,
+textarea,
+select {
+    border: none;
+    background: none;
+}
+
+/* Tables: collapse borders and remove spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #222222;
+    padding: 1rem;
+}
+
+a {
+    color: rgba(199, 139, 7, 255) !important;
+}
+
+/* Flexbox layout for header content */
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo-img {
+    height: 50px;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    gap: 6rem;
+}
+
+/* Navigation Link Styling */
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Banner Container Styling */
+.main-banner-container {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+/* Main Banner Image Styling */
+.main-banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: fit-content;
+    background-color: white;
+}
+
+/* Search Bar Input Styling */
+.search-bar input[type="text"] {
+    border: none;
+    padding: 8px;
+    outline: none;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Search Icon Styling */
+.search-bar i {
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+    border: 1px solid rgba(199, 139, 7, 255);
+    background-color: rgba(34, 34, 34, 255);
+    color: rgba(199, 139, 7, 255);
+}
+
+/* Wrapper for full-width sections */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+/* Transparent Box Styling */
+.transparent-box {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 84%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Welcome Text Styling */
+#welcome-text {
+    text-align: left;
+    font-size: 75px;
+}
+
+/* Connect Button Container Styling */
+.connect-button {
+    text-align: left;
+}
+
+/* Connect Button Styling */
+.connect-button button {
+    background-color: rgba(199, 139, 7, 255);
+    height: 100px;
+    width: 280px;
+}
+
+/* About Us Section Styling */
+.about-us-container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 230, 172, 255);
+    padding: 15px;
+}
+
+/* About Us Left Section Styling */
+.about-us-left,
+.about-us-right {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* About Us Left Image Styling */
+.about-us-left {
+    padding-left: 8%;
+    padding-right: 5px;
+    margin-right: 7px;
+}
+
+.about-us-left img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* About Us Right Section Styling */
+.about-us-right {
+    text-align: left;
+    padding-right: 8%;
+    padding-left: 0;
+    margin-left: 7px;
+}
+
+/* About Us Text Styling */
+.about-us-text {
+    font-size: 60px;
+}
+
+/* Services Section Header Styling */
+.services-header-text {
+    margin-left: 8%;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+/* Services Container Styling */
+.services-container {
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Upper Services Container Styling */
+.services-upper-container {
+    width: calc(50% - 10px);
+    background-color: lightblue;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Upper Services Image Styling */
+.services-upper-container img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+/* Lower Services Container Styling */
+.services-lower-container {
+    width: calc(33.33% - 13.33px);
+    background-color: lightcoral;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lower Services Image Styling */
+.services-lower-container img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+/* Services Button Styling */
+.services-button button {
+    background-color: rgba(34, 34, 34, 255);
+    height: 80px;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+}
+
+/* Services Container Text Styling */
+.services-container-text {
+    background-color: rgba(255, 230, 172, 255);
+    padding: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust services container width for mobile */
+    .services-upper-container,
+    .services-lower-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Vision Section Styling */
+.vision-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Vision Image Styling */
+.vision-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Vision Content Box Styling */
+.vision-content {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Vision Button Styling */
+.vision-button button {
+    height: 70px;
+    width: 190px;
+    border: 1px solid rgba(199, 139, 7, 255);
+    background-color: rgba(17, 37, 62, 255);
+    color: white;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+/* Team Section Styling */
+.team-container {
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Team Member Partition Styling */
+.team-small-partition {
+    width: calc(50% - 0px);
+    background-color: lightblue;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Team Member Text Styling */
+.team-partition-text {
+    margin-top: 20px;
+}
+
+/* Team Member Image Styling */
+.team-small-partition img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust team section width for mobile */
+    .team-small-partition {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Connect Button Text Styling */
+.connect-seventh p {
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Connect Button Icon Styling */
+.connect-seventh i {
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+/* Contact Section Styling */
+.contact-container {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Contact Section Partition Styling */
+.contact-small-partition {
+    width: calc(50% - 0px);
+    height: 500px;
+    box-sizing: border-box;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+/* Form Label Styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form Input and Textarea Styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Textarea Specific Styling */
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Maps Container Styling */
+.maps-container {
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* Maps Iframe Styling */
+.maps-container iframe {
+    border: none;
+}
+
+/* Timetable Section Styling */
+.timetable-container {
+    width: 82%;
+    margin: 0 auto;
+}
+
+/* Contact Form Button Styling */
+.contact-form button {
+    background-color: black;
+    color: #ffe6ac;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hours of Operation Section Styling */
+.hrs {
+    width: calc(50% - 0px);
+    background-color: #f9f9f9;
+}
+
+/* Timetable Table Styling */
+.hrs table {
+    width: 200%;
+    border-collapse: collapse;
+    margin-left: 0;
+}
+
+/* Table Header and Cell Styling */
+.hrs th,
+.hrs td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    color: black;
+    vertical-align: middle;
+}
+
+/* Table Header Background Styling */
+.hrs th {
+    background-color: rgba(255, 230, 172, 1);
+    color: black;
+}
+
+/* Table Cell Background Styling */
+.hrs td {
+    background-color: #fff;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(199, 139, 7, 1);
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+/* Footer Container Styling */
+.footer-container {
+    margin-left: 9%;
+}
